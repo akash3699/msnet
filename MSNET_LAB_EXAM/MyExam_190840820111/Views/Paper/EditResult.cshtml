@@ -1,0 +1,25 @@
+﻿@model string
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditResult</title>
+</head>
+<body>
+    <div> 
+        <h2>@ViewBag.message</h2>
+        <h2>@Model</h2>
+        <h2 style="text-align:center">NewsPaper Update Details</h2>
+        <h4 style="color:green;text-align:center;">NewsPaper Details Updated Successfully</h4>
+        <h3 style="text-align:center"><a href="/Paper/PaperList">Go back to the List</a></h3>
+        <script>
+            alert("NewsPaper Details Updated Successfully")
+        </script>
+    </div>
+</body>
+</html>

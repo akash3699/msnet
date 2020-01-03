@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+    <link href="~/UI Elements/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/UI Elements/bootstrap.min.js"></script>
+    <script src="~/UI Elements/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <form action="/Book/Edit/" method="post">
+        <table>
+            <tr>
+                <td>
+                    <input type="number" name="ISBN" value="@Model.ISBN" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="Name" value="@Model.Name" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="Author" value="@Model.Author" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="btn_edit" value="Update" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

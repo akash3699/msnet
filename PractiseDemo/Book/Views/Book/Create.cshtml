@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <link href="~/UI Elements/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/UI Elements/bootstrap.min.js"></script>
+    <script src="~/UI Elements/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <form action="/Book/Create" method="post">
+        <table>
+            <tr>
+                <td>
+                    <input type="number" required="required" name="ISBN" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" required="required" name="Name" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" required="required" name="Author" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="btn_Add" value="Add" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

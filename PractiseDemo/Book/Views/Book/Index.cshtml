@@ -1,0 +1,33 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/UI Elements/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/UI Elements/bootstrap.min.js"></script>
+    <script src="~/UI Elements/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <h3><a href="/Book/Create">Add New Book</a></h3>
+    <table class="table">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.ISBN
+                </td>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Author
+                </td>
+                <td><a href="/Book/Edit/@item.ISBN">Edit</a></td>
+                <td><a href="/Book/Delete/@item.ISBN">Delete</a></td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

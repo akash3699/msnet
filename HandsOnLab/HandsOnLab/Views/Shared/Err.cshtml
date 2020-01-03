@@ -1,0 +1,18 @@
+﻿@model HandleErrorInfo
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Err</title>
+</head>
+<body>
+    <div>
+        <h1>Something Wrong! Pls Try again</h1>
+
+        <hr />
+        <h2>Technical Details: @Model.Exception.Message</h2>
+        <h3>Try Again: <a href="/@Model.ControllerName/@Model.ActionName">Click Here</a></h3>
+    </div>
+</body>
+</html>
